@@ -3,7 +3,7 @@ from accounts.views import*
 
 urlpatterns = [
     
-    path('dashboard/', HomeView.as_view(), name='dashboard'),
+    
 
     path('register/', RegisterView.as_view(), name='register'),
 

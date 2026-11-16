@@ -48,8 +48,8 @@
             <h5>{{ request.user.date_joined|date:"d M Y" }}</h5>
         </div>
 
-        <a href="{% url 'home' %}" class="btn btn-outline-primary mb-3">
-            Back to Dashboard
+        <a href="{% url 'dashboard' %}" class="btn btn-outline-primary mb-3">
+            Dashboard
         </a>
 
         <form method="POST" action="{% url 'logout' %}">

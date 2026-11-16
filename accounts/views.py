@@ -15,9 +15,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 
 
-class HomeView(TemplateView):
-    def get(self,request):
-        return render(request,'home.html') 
+
 
 # User Registration
 class RegisterView(View):
