@@ -3,11 +3,11 @@ from accounts.views import*
 
 urlpatterns = [
     
-    path('', HomeView.as_view(), name='home'),
+    path('dashboard/', HomeView.as_view(), name='dashboard'),
 
     path('register/', RegisterView.as_view(), name='register'),
 
-    path('login/', UserLoginView.as_view(), name='login'),
+    path('', UserLoginView.as_view(), name='login'),
 
     path('logout/', UserLogoutView.as_view(), name='logout'),
 
